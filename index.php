@@ -17,7 +17,7 @@
         if(mysqli_num_rows($result)>0){
             echo"<table border='1'><tr><th>Imię</th>
             <th>Nazwisko</th><th>Wiek</th></tr>"
-            while($row = mysqli_fetch+assoc($result)){
+            while($row = mysqli_fetch_assoc($result)){
                 echo "<tr><td>".$row['imie']"</td>
                 <td>".$row['nazwisko']"</td>
                 <td>".$row['wiek']"</td>
